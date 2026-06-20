@@ -1,0 +1,20 @@
+# Mini CRM Dashboard Requirements
+
+# This project is built using:
+
+HTML5
+CSS3
+JavaScript (Vanilla)
+
+# No external libraries or frameworks used
+
+# Browser Requirements:
+
+Google Chrome (recommended)
+Microsoft Edge
+Mozilla Firefox
+
+# Optional Tools:
+
+VS Code
+Live Server Extension
