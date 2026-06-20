@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>CRM Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body onload="checkAuth(); loadLeads(); updateStats();">
+
+<div class="container">
+
+  <div class="header">
+  <h2>📊 Mini CRM Dashboard</h2>
+  <button onclick="logout()">Logout</button>
+</div>
+
+  <!-- Analytics -->
+  <div class="stats">
+    <div>Total: <span id="total"></span></div>
+    <div>New: <span id="new"></span></div>
+    <div>Contacted: <span id="contacted"></span></div>
+    <div>Converted: <span id="converted"></span></div>
+  </div>
+
+  <!-- Add Lead -->
+  <h3>Add Lead</h3>
+  <input type="text" id="name" placeholder="Name">
+  <input type="email" id="email" placeholder="Email">
+  <select id="status">
+    <option>New</option>
+    <option>Contacted</option>
+    <option>Converted</option>
+  </select>
+  <input type="text" id="notes" placeholder="Notes">
+  <button onclick="addLead()">Add</button>
+
+  <!-- Search -->
+  <h3>Search</h3>
+  <input type="text" id="search" placeholder="Search..." onkeyup="searchLeads()">
+
+  <!-- Table -->
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Email</th>
+        <th>Status</th>
+        <th>Notes</th>
+        <th>Actions</th>
+      </tr>
+    </thead>
+    <tbody id="leadTable"></tbody>
+  </table>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
