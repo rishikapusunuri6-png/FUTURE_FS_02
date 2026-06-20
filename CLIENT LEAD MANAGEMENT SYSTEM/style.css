@@ -1,0 +1,177 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #FFF8E7; /* Cream */
+  margin: 0;
+  color: #1E293B;
+}
+
+/* CARD BACKGROUNDS */
+.login-box,
+.stats div,
+table,
+.header {
+  background: #FFFBF0; /* light cream card */
+}
+
+/* CENTER LOGIN */
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* LOGIN BOX */
+.login-box {
+  padding: 30px;
+  border-radius: 12px;
+  width: 320px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+.login-box h2 {
+  text-align: center;
+  color: #166534; /* green */
+}
+
+/* INPUTS */
+input, select {
+  width: 100%;
+  margin: 10px 0;
+  padding: 12px;
+  border: 1px solid #d6d3d1;
+  border-radius: 8px;
+  outline: none;
+  background: #fffaf5;
+}
+
+input:focus, select:focus {
+  border-color: #166534;
+}
+
+/* BUTTON */
+button {
+  padding: 10px 15px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  color: white;
+  background: linear-gradient(135deg, #166534, #22C55E);
+  transition: 0.3s;
+}
+
+button:hover {
+  transform: scale(1.05);
+  opacity: 0.9;
+}
+.container {
+  width: 900px;
+  margin: 40px auto; /* center horizontally */
+  background: #FFFBF0;
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+/* HEADER */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  padding: 15px 20px;
+  border-radius: 10px;
+}
+
+/* LOGOUT BUTTON */
+.header button {
+  background: #EF4444;
+}
+
+/* HEADINGS */
+h2 {
+  color: #166534;
+}
+
+/* STATS */
+.stats {
+  display: flex;
+  gap: 20px;
+  margin: 20px 0;
+  flex-wrap: wrap;
+}
+
+.stats div {
+  flex: 1;
+  min-width: 150px;
+  padding: 15px;
+  border-radius: 10px;
+  text-align: center;
+  font-weight: bold;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+  border-left: 5px solid #22C55E;
+}
+
+/* TABLE */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+th {
+  background: #166534;
+  color: white;
+}
+
+th, td {
+  padding: 12px;
+  text-align: center;
+}
+
+tr:nth-child(even) {
+  background: #fefce8;
+}
+
+/* ONLY ACTION BUTTONS */
+td button:first-child {
+  background: #22C55E; /* Edit */
+}
+
+td button:last-child {
+  background: #EF4444; /* Delete */
+}
+
+/* SEARCH BOX */
+#search {
+  margin-top: 10px;
+  border: 2px solid #22C55E;
+}
+
+/* REMOVE FLOAT ISSUE */
+button[onclick="logout()"] {
+  float: none;
+}
+
+/* MAIN CONTAINER CENTER CARD */
+.container {
+  width: 900px; /* fixed width */
+  margin-top: 40px;
+  background: #FFFBF0;
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+/* BACKGROUND TITLE */
+.bg-title {
+  position: absolute;
+  top: 40px;
+  width: 100%;
+  text-align: center;
+  font-size: 28px;
+  font-weight: bold;
+  color: #166534;
+  letter-spacing: 1px;
+}
